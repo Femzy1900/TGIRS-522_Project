@@ -36,12 +36,12 @@ tgirs/
 ## Setup Instructions
 
 ### 1. Database Configuration
-By default, the project uses a MongoDB Atlas cluster. The connection string is provided in the `server/.env` file:
+Create a `.env` file inside the `server/` directory with the following content:
 ```
-MONGO_URI=mongodb+srv://adedokunfemi14_db_user:Adedokun1900@cluster0.n7chauo.mongodb.net/tgirs?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URI=your_mongodb_connection_string_here
 PORT=5000
 ```
-> **Note:** If you wish to use a local MongoDB instance instead, update the `.env` file to: `MONGO_URI=mongodb://127.0.0.1:27017/tgirs`.
+> **Note:** You can get a free MongoDB Atlas cluster at [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas). If you prefer a local instance, use: `MONGO_URI=mongodb://127.0.0.1:27017/tgirs`.
 
 ### 2. Backend Setup
 Navigate to the `server` directory, install dependencies, and run the server:
